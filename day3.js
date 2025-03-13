@@ -361,3 +361,64 @@
 // console.log(`The car's color us ${c1.color}`);
 // console.log(`The car has ${c1.wheels} wheels.`);
 
+
+//Practicals
+
+// 1.
+// given
+// arr=['name','tagline','age','5','type':'mnc', .......]
+
+// output
+// {
+//   "name":"tagline",
+//   "age":"5",
+//   "type":"mnc"
+//   ...
+// }
+
+let arr = ['name', 'tagline', 'age', '5', 'type', 'mnc', '.......']
+let obj = { ...arr }
+
+for (i in obj) {
+    let output = ""
+    output += i
+    console.log(obj)
+}
+
+// for(let i=0;i<=arr.length;i++){
+//     console.log(typeof(arr[i]))
+// }
+
+// for(let i=1;i<=arr.length;i++){
+//     let output = ""
+//     output += i
+//     console.log(output[i])
+// }
+
+// Write the code, one line for each action also print after every action:
+// 1. Create an empty object user.
+// 2. Add the property name with the value John.
+// 3. Add the property surname with the value Smith.
+// 4. Change the value of the name to Pete.
+// 5. Remove the property name from the object.
+
+var user = {
+    name: "John",
+    surname: "Smith",
+
+    set changeName(newName) {
+        this.name = newName;
+    }
+}
+
+console.log(user.name)
+user.changeName = "Pete"
+console.log(user.name)
+delete user.name
+console.log(user.name)
+
+
+
+
+
+
