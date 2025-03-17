@@ -146,7 +146,7 @@
 // studentData.splice(0,1)
 // console.log(studentData)
 
-let studentdata = [["Jack", 24], ["Sara", 23]]
+// let studentdata = [["Jack", 24], ["Sara", 23]]
 
 // for(let i =0 ;i< studentdata.length;i++){
 //     for(let j=0;j<studentdata[i].length;j++){
@@ -240,38 +240,36 @@ let studentdata = [["Jack", 24], ["Sara", 23]]
 // }
 // console.log(person)
 
-
 // given
 // [1,232,1,-2123,-21,213,-2123,1]
 // output
 // [1,232,1,213,1,-2123,-21,-2123]
 
+// let rev = [1, 232, 1, -2123, -21, 213, -2123, 1]
+// let pos = []
+// let neg = []
 
-let rev = [1, 232, 1, -2123, -21, 213, -2123, 1]
-let pos = []
-let neg = []
+// for (let num of rev) {
+//     if (num > 0) {
+//         pos.push(num)
+//     } else {
+//         neg.push(num)
+//     }
+// }
 
-for (let num of rev) {
-    if (num > 0) {
-        pos.push(num)
-    } else {
-        neg.push(num)
-    }
-}
-
-let output = pos.concat(neg)
-console.log(output)
+// let output = pos.concat(neg)
+// console.log(output)
 
 // given
 // [[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1]]
 // output
 // [1,232,1,213,1,-2123,-21,-2123,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1]
 
-let merge = [[1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1]]
+// let merge = [[1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1]]
 
-let res = [].concat(...merge)
+// let res = [].concat(...merge)
 
-console.log(res)
+// console.log(res?.toString())
 
 // given
 // {
@@ -285,14 +283,29 @@ console.log(res)
 // output
 // ["Hello","world","JS","RN"]  // all unique names in any order
 
-let order = {
-    name: "Hello", value: 1,
-    name: "world", value: 2,
-    name: "Hello", value: 1,
-    name: "JS", value: 3,
-    name: "RN", value: 4,
-    name: "JS", value: 3
-}
+// let data = [
+//     { name: "Hello", value: 1 },
+//     { name: "world", value: 2 },
+//     { name: "Hello", value: 1 },
+//     { name: "JS", value: 3 },
+//     { name: "RN", value: 4 },
+//     { name: "JS", value: 3 }
+// ];
+
+// const uNames = [...new Set(data.map(item => item.name))];
+// console.log(uNames);
+
+// given
+// arr=['name','tagline','age','5','type':'mnc', .......]
+
+// output
+// {
+//   "name":"tagline",
+//   "age":"5",
+//   "type":"mnc"
+//   ...
+// }
+// const uNames = [...new Set(data.map(item => item.name))];
 
 // function displayUnique() {
 //     console.log(`${this.name}`)
@@ -309,15 +322,16 @@ let order = {
 //     console.log(order.name[i]);
 // }
 
-let url = "https://www.taglineinfotech.com/RN/TraneeProgram"
+//Latest
+let url = "https://www.taglineinfotech.com/RN/dfdfdf.txt"
 
 switch (url) {
     case "https://www.taglineinfotech.com/RN/TraneeProgram.txt":
         console.log("File name is - TraneeProgram.txt & extension is - txt")
         break;
 
-    case "https://www.taglineinfotech.com/RN/TraneeProgram":
+    default:
+    case "":
         console.log("Invalid URL")
         break;
-
 }

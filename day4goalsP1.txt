@@ -21,10 +21,10 @@ output
 ["Hello","world","JS","RN"]  // all unique names in any order
 
 given
-Case1 url = "https://www.taglineinfotech.com/RN/TraneeProgram.txt"
+Case1 url = ".../TraneeProgram.txt"
 output : print this line 
 "File name is - TraneeProgram.txt & extension is - txt"
 
-Case2 url = "https://www.taglineinfotech.com/RN/TraneeProgram"
+Case2 url = ".../TraneeProgram"
 output : should give error
 "Invalid URL" 

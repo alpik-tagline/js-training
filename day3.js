@@ -376,8 +376,22 @@
 //   ...
 // }
 
-let arr = ['name', 'tagline', 'age', '5', 'type', 'mnc', '.......']
-let obj = { ...arr }
+
+
+// for (let i = 0; i < arr.length; i++) {
+//     let output = []
+//     arr[i] += " ", " ";
+//     output.push(arr)
+//     console.log(output)
+//     let res = { ...output }
+//     console.log(res)
+// }
+
+// let output = {};
+// for (let i = 0; i <= arr.length; i += 2) {
+//     output[arr[i]] = arr[i + 1];
+// }
+// console.log(output);
 
 // let map1 = new Map()
 // map1.set
@@ -385,7 +399,7 @@ let obj = { ...arr }
 //     console.log(key + '-' + value)
 // }
 
-console.log(obj)
+// console.log(obj)
 
 // for(let i in obj){
 //     let space = " " + obj[i++]
@@ -408,11 +422,6 @@ console.log(obj)
 //     function myfn(value, key) {
 //         console.log(value + '- ' + key);
 //     }
-// }
-
-// for (let i = 0; i < arr.length; i++) {
-//     arr[i] += " ",":"," ";
-//     console.log(arr)
 // }
 
 // for(let i in obj){
@@ -495,5 +504,26 @@ console.log(obj)
 
 
 
+//LATEST
+var user = {}
 
+console.log(user)
+user.name = "John"
+user.surname = "Smith"
+console.log(user)
+user.name = "Pete"
+console.log("changed name", user)
+delete user.name
+console.log("delete user", user)
+console.log("remove property name from obj", user)
+
+
+//Latest
+// let arr = ['name', 'tagline', 'age', '5', 'type', 'mnc', `asdasd aasd`,'a sdasdasd'];
+// let obj = {};
+
+// for (let i = 0; i < arr.length; i += 2) {
+//     obj[arr[i]] = arr[i + 1];
+// }
+// console.log(obj);
 
