@@ -379,20 +379,95 @@
 let arr = ['name', 'tagline', 'age', '5', 'type', 'mnc', '.......']
 let obj = { ...arr }
 
-for (i in obj) {
-    let output = ""
-    output += i
-    console.log(obj)
-}
+// let map1 = new Map()
+// map1.set
+// for (let [key, value] of map1) {
+//     console.log(key + '-' + value)
+// }
 
-// for(let i=0;i<=arr.length;i++){
+console.log(obj)
+
+// for(let i in obj){
+//     let space = " " + obj[i++]
+//     console.log(`${i} :${space}`)
+// }
+
+// let arr = new Map()
+// arr.set['name', 'tagline', 'age', '5', 'type', 'mnc', '.......']
+// for (let elem of arr.entries()) {
+//     console.log(`${elem[0]}: ${elem[1]}`);
+// }
+
+// arr.map((obj,oj1)=>{
+//     console.log(obj + oj1)
+// })
+
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(" ", arr[i], arr[i + 1])
+//     arr.forEach(myfn)
+//     function myfn(value, key) {
+//         console.log(value + '- ' + key);
+//     }
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] += " ",":"," ";
+//     console.log(arr)
+// }
+
+// for(let i in obj){
+//     console.log(i)
+// }
+
+// for(let i =0 ;i< obj.length;i++){
+//     for(let j=0;j<obj[i].length;j++){
+//         console.log(obj[i][j])
+//     }
+// }
+
+// for(let i in obj){
+//     console.log(obj[i])
+// }
+
+// for(let i =0;i<obj.length;i++){
+//     console.log(obj[i] ,obj[i+1])
+// }
+
+// for(const [key,value] of Object.entries(obj)){
+//     console.log(`${value}`)
+// }
+
+// for(let i=0;i<=obj.length;i++){
 //     console.log(typeof(arr[i]))
 // }
 
-// for(let i=1;i<=arr.length;i++){
+// for (let i in obj) {
 //     let output = ""
 //     output += i
 //     console.log(output[i])
+// }
+
+// for (let i = 1; i <= obj.length; i++) {
+//     let output = " "
+//     output += i
+//     console.log(output[i])
+// }
+
+// console.log(typeof(obj))
+
+// for(let i=0;i<=obj.length;i++){
+//     let output = ""
+//     output +=i
+//     console.log(output)
+// }
+
+// const map = new Map(Object.entries(obj))
+// console.log(map)
+
+// obj.forEach(myfun)
+
+// function myfun(item,index,arr){
+//     arr[index] = item
 // }
 
 // Write the code, one line for each action also print after every action:
@@ -402,20 +477,20 @@ for (i in obj) {
 // 4. Change the value of the name to Pete.
 // 5. Remove the property name from the object.
 
-var user = {
-    name: "John",
-    surname: "Smith",
+// var user = {
+//     name: "John",
+//     surname: "Smith",
 
-    set changeName(newName) {
-        this.name = newName;
-    }
-}
+//     set changeName(newName) {
+//         this.name = newName;
+//     }
+// }
 
-console.log(user.name)
-user.changeName = "Pete"
-console.log(user.name)
-delete user.name
-console.log(user.name)
+// console.log(user.name)
+// user.changeName = "Pete"
+// console.log(user.name)
+// delete user.name
+// console.log(user.name)
 
 
 

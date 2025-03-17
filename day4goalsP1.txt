@@ -1,0 +1,30 @@
+given
+[1,232,1,-2123,-21,213,-2123,1]
+output
+[1,232,1,213,1,-2123,-21,-2123]
+
+given
+[[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1]]
+output
+[1,232,1,213,1,-2123,-21,-2123,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1]
+
+given
+{
+    name:"Hello", value:1,
+    name:"world", value:2,
+    name:"Hello", value:1,
+    name:"JS", value:3,
+    name:"RN", value:4,
+    name:"JS", value:3
+}
+output
+["Hello","world","JS","RN"]  // all unique names in any order
+
+given
+Case1 url = "https://www.taglineinfotech.com/RN/TraneeProgram.txt"
+output : print this line 
+"File name is - TraneeProgram.txt & extension is - txt"
+
+Case2 url = "https://www.taglineinfotech.com/RN/TraneeProgram"
+output : should give error
+"Invalid URL"
