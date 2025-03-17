@@ -240,3 +240,84 @@ let studentdata = [["Jack", 24], ["Sara", 23]]
 // }
 // console.log(person)
 
+
+// given
+// [1,232,1,-2123,-21,213,-2123,1]
+// output
+// [1,232,1,213,1,-2123,-21,-2123]
+
+
+let rev = [1, 232, 1, -2123, -21, 213, -2123, 1]
+let pos = []
+let neg = []
+
+for (let num of rev) {
+    if (num > 0) {
+        pos.push(num)
+    } else {
+        neg.push(num)
+    }
+}
+
+let output = pos.concat(neg)
+console.log(output)
+
+// given
+// [[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1],[1,232,1,-2123,-21,213,-2123,1]]
+// output
+// [1,232,1,213,1,-2123,-21,-2123,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1,1,232,1,-2123,-21,213,-2123,1]
+
+let merge = [[1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1], [1, 232, 1, -2123, -21, 213, -2123, 1]]
+
+let res = [].concat(...merge)
+
+console.log(res)
+
+// given
+// {
+//     name:"Hello", value:1,
+//     name:"world", value:2,
+//     name:"Hello", value:1,
+//     name:"JS", value:3,
+//     name:"RN", value:4,
+//     name:"JS", value:3
+// }
+// output
+// ["Hello","world","JS","RN"]  // all unique names in any order
+
+let order = {
+    name: "Hello", value: 1,
+    name: "world", value: 2,
+    name: "Hello", value: 1,
+    name: "JS", value: 3,
+    name: "RN", value: 4,
+    name: "JS", value: 3
+}
+
+// function displayUnique() {
+//     console.log(`${this.name}`)
+// }
+
+// order.displayUnique = displayUnique
+// order.displayUnique()
+
+// for (let i = 0; i <= order.name; i++) {
+//     console.log(order[i])
+// }
+
+// for (let i in order.name) {
+//     console.log(order.name[i]);
+// }
+
+let url = "https://www.taglineinfotech.com/RN/TraneeProgram"
+
+switch (url) {
+    case "https://www.taglineinfotech.com/RN/TraneeProgram.txt":
+        console.log("File name is - TraneeProgram.txt & extension is - txt")
+        break;
+
+    case "https://www.taglineinfotech.com/RN/TraneeProgram":
+        console.log("Invalid URL")
+        break;
+
+}
