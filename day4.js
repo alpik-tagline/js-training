@@ -344,7 +344,7 @@
 
 let url = "www.tagline/trainee.txt"
 
-if (url.includes(".")) {
+if (url.charAt(4) == "." && url.charAt(-4) == ".") {
     let search = url.slice(4, -4)
     let extension = url.slice(-4)
     console.log("File name is", search, "extension is ", extension)
@@ -370,7 +370,6 @@ if (url.includes(".")) {
 // let extension = url.slice(-4)
 
 // console.log("File name is", search, "extension is ", extension)
-
 // console.log(search)
 
 // if (url.includes(".")) {
