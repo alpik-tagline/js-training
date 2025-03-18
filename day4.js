@@ -323,15 +323,77 @@
 // }
 
 //Latest
-let url = "https://www.taglineinfotech.com/RN/dfdfdf.txt"
+// let url = ""
 
-switch (url) {
-    case "https://www.taglineinfotech.com/RN/TraneeProgram.txt":
-        console.log("File name is - TraneeProgram.txt & extension is - txt")
-        break;
+// switch (url) {
+//     case ".../TraneeProgram.txt":
+//         console.log("File name is - TraneeProgram.txt & extension is - txt")
+//         break;
 
-    default:
-    case "":
-        console.log("Invalid URL")
-        break;
+//     default:
+//     case "":
+//         console.log("Invalid URL")
+//         break;
+// }
+
+// Case1 url = any string ...
+// /xyz.xyzakljdsiashd
+
+// output : print this line 
+// "File name is - TraneeProgram.txt & extension is - txt"
+
+let url = "www.tagline/trainee.txt"
+
+if (url.includes(".")) {
+    let search = url.slice(4, -4)
+    let extension = url.slice(-4)
+    console.log("File name is", search, "extension is ", extension)
+} else {
+    console.log("Invalid URL")
 }
+
+// if (url.includes(".")) {
+//     console.log(`The url is ${url}`)
+// } else {
+//     console.log("Invalid URL")
+// }
+
+// if (url) {
+//     let search = url.slice(4, -4)
+//     let extension = url.slice(-4)
+//     console.log("File name is", search, "extension is ", extension)
+// } else {
+//     console.log("Invalid URL")
+// }
+
+// let search = url.slice(4, -4)
+// let extension = url.slice(-4)
+
+// console.log("File name is", search, "extension is ", extension)
+
+// console.log(search)
+
+// if (url.includes(".")) {
+//     let search = url.slice(4, -4)
+//     let extension = url.slice(-4)
+//     console.log("File name is", search, "extension is ", extension)
+// } else {
+//     console.log("Invalid URL")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

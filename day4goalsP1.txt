@@ -21,10 +21,11 @@ output
 ["Hello","world","JS","RN"]  // all unique names in any order
 
 given
-Case1 url = ".../TraneeProgram.txt"
+Case1 url = any string ...
+/xyz.xyzakljdsiashd
+
 output : print this line 
 "File name is - TraneeProgram.txt & extension is - txt"
-
-Case2 url = ".../TraneeProgram"
+/acjahcdias
 output : should give error
 "Invalid URL" 
