@@ -501,9 +501,6 @@
 // delete user.name
 // console.log(user.name)
 
-
-
-
 //LATEST
 var user = {}
 
@@ -517,7 +514,6 @@ delete user.name
 console.log("delete user", user)
 console.log("remove property name from obj", user)
 
-
 //Latest
 // let arr = ['name', 'tagline', 'age', '5', 'type', 'mnc', `asdasd aasd`,'a sdasdasd'];
 // let obj = {};
@@ -526,4 +522,5 @@ console.log("remove property name from obj", user)
 //     obj[arr[i]] = arr[i + 1];
 // }
 // console.log(obj);
+
 

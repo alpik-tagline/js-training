@@ -502,6 +502,44 @@ const hospital = {
 // console.log(proxy.name)
 
 
+// let student = {
+//     name :'',
+//     age : 23
+// }
 
+// const handler = {
+//     set : function (obj,prop,value){
+//         if(obj[prop]){
+//             console.log('read only')
+//         }
+//     }
+// }
+
+// const proxy = new Proxy(student,handler)
+
+// proxy.name = 'John'
+// proxy.age = 33
+
+// console.log(proxy.name)
+
+// const myfun = () =>{
+//     console.log("execute this function")
+// }
+
+// const handler = {
+//     set : function(target,prop,value){
+//         if(prop === ' name' && value === 'jack'){
+//             myfun()
+//         }
+//         else{
+//             console.log('only access name property')
+//         }
+//     }
+// }
+
+// const proxy = new Proxy({},handler)
+// proxy.name = 'Jack'
+// proxy.age = 33
+// console.log(proxy.name)
 
 
