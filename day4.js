@@ -368,6 +368,8 @@ console.log(urlsplit)
 let newurl = urlsplit.slice(1)
 console.log("newurl", newurl)
 
+console.log("mid",newurl.includes("."))
+
 let latesturl = newurl.includes(".")
 console.log("latest", latesturl)
 
