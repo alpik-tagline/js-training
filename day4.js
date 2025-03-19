@@ -342,15 +342,76 @@
 // output : print this line 
 // "File name is - TraneeProgram.txt & extension is - txt"
 
-let url = "www.tagline/trainee.txt"
+// let url = "www.tagline/trainee.txt"
 
-if (url.charAt(4) == "." && url.charAt(-4) == ".") {
-    let search = url.slice(4, -4)
-    let extension = url.slice(-4)
-    console.log(`File name is ${search} and extension is ${extension}`)
-} else {
-    console.log("Invalid URL")
-}
+// if (url.charAt(4) == "." && url.charAt(-4) == ".") {
+//     let search = url.slice(4)
+//     let extension = url.slice(-4)
+//     console.log(`File name is ${search} and extension is ${extension}`)
+// }
+// else {
+//     console.log("Invalid URL")
+// }
+
+// 1. split string into parts from  '/'
+// 2. get last part
+// 3. check if last part contains '.'
+// - if not invalid url
+// 4. split last part from '.'
+// 5. get last part which will be your extension
+// 6. combine all other parts and that string will be your filename
+
+let url = "www.tagline/trainee.document.txt"
+let urlsplit = url.split("/")
+console.log(urlsplit)
+
+let newurl = urlsplit.slice(1)
+console.log("newurl", newurl)
+
+let latesturl = newurl.includes(".")
+console.log("latest", latesturl)
+
+// let newarr = latesturl.toString()
+// console.log("str", typeof (newarr))
+
+// console.log("newarr", newarr)
+
+// let newnew = newarr.includes(".")
+// console.log("newnew", newnew)
+
+
+
+
+
+
+
+
+
+// if (url.charAt(4) == "." && url.charAt(-4) == ".") {
+//     let search = url.slice(4)
+//     let extension = url.slice(-4)
+//     console.log(`File name is ${search} and extension is ${extension}`)
+// }
+// else {
+//     console.log("Invalid URL")
+// }
+
+// if(url){
+//     let newUrl = url.slice(4, -4)
+//     let newUrl1 = url.slice(-4)
+//     console.log()
+// }else{
+//     console.log("Invalid url")
+// }
+
+// let test = "test,test,best"
+// let test2 = test.split("")
+// console.log(test2)
+
+// let text = "how are you?"
+// let arr = text.split("")
+
+// console.log(arr)
 
 // if (url.includes(".")) {
 //     console.log(`The url is ${url}`)
