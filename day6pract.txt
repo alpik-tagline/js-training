@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Alice Johnson",
+    "id": "A123",
+    "age": 30,
+    "gender": "female"
+  },
+  {
+    "name": "Bob Smith",
+    "id": "B456",
+    "age": 25,
+    "gender": "male"
+  },
+    {
+    "name": "Charlie Williams",
+    "id": "C789",
+    "age": 42,
+    "gender": "male"
+  },
+  {
+    "name": "Diana Brown",
+    "id": "D101",
+    "age": 28,
+    "gender": "female"
+  },
+  {
+    "name": "Ethan Davis",
+    "id": "E112",
+    "age": 35,
+    "gender": "male"
+  },
+    {
+    "name": "Fiona Miller",
+    "id": "F131",
+    "age": 29,
+    "gender": "female"
+  },
+  {
+    "name": "George Wilson",
+    "id": "G141",
+    "age": 48,
+    "gender": "male"
+  },
+  {
+    "name": "Hannah Moore",
+    "id": "H151",
+    "age": 31,
+    "gender": "female"
+  },
+    {
+    "name": "Ian Taylor",
+    "id": "I161",
+    "age": 26,
+    "gender": "male"
+  },
+    {
+    "name": "Julia Anderson",
+    "id": "J171",
+    "age": 33,
+    "gender": "female"
+  }
+]
+
+
+1. new array of all user's id and name
+2. new array of all user's id and age
+3. Male user array with id and name
+4. Users more than 30 years old id and name
+5. Female more than 30 years old id and name
+6. Users less than 30 years name and age
+
+
+
+let string = 'hello world Bhavik';
+
+1. print every latter in the interval of 1 second and stop after 'world' letter
+
+output:
+h 
+e
+l
+l
+o
+
+w
+o
+r
+l
+d
+
+2. print whole string only once, but after 2 seconds
+
+
+let email = 'xyz@xyz-xc.co.in'
+
+1. verify if email is valid or not only using regex 
+
+let string = 'xvvxvvvvvxxvvvvxvvvxvvvvvvv'
+Output = [0,3,10,15, 19]
+
+1. get array of positions numbers where 'xv' is repeating
+
+let date = '2024-03-01'
+
+1. get year based on given date 
+   get month based on given date 
+   get day based on given date 
+3. get timestamp based on given date,
+4. convert it into 'DD-MM-YYYY' format
+5. print date into 'DD/MM' format  
+
+let time = '13:1'
+let time2 = '9:2'
+
+1. print proper time, ex in time 2 it's '9:2' so it should be '09:02 AM', in time it's '13:1' so it should be '01:01 PM'

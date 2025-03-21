@@ -361,17 +361,31 @@
 // 5. get last part which will be your extension
 // 6. combine all other parts and that string will be your filename
 
-let url = "www.tagline/trainee.document.txt"
-let urlsplit = url.split("/")
-console.log(urlsplit)
 
-let newurl = urlsplit.slice(1)
-console.log("newurl", newurl)
+// Case1 url = any string ...
+// /xyz.xyzakljdsiashd
 
-console.log("mid",newurl.includes("."))
+// output : print this line 
+// "File name is - TraneeProgram.txt & extension is - txt"
 
-let latesturl = newurl.includes(".")
-console.log("latest", latesturl)
+// let url = "www.tagline/asdasdfasd/trainee.document.txt.asd.as.da.sd.asd.sa.dasd"
+
+// let urlsplit = url.split("/")
+// // console.log("split done", urlsplit)
+
+// let newurl = urlsplit.slice(1)
+// // console.log("last part", newurl)
+
+// if (newurl?.[0].includes(".")) {
+//     console.log(`File name is ${urlsplit[1]} and extension is ${url.slice(-4)}`)
+// } else {
+//     console.log("last part contain dot", "no")
+// }
+
+// console.log("checking dot", newurl.includes("."))
+
+// let latesturl = newurl.includes(".")
+// console.log("checking dot", latesturl)
 
 // let newarr = latesturl.toString()
 // console.log("str", typeof (newarr))
@@ -380,14 +394,6 @@ console.log("latest", latesturl)
 
 // let newnew = newarr.includes(".")
 // console.log("newnew", newnew)
-
-
-
-
-
-
-
-
 
 // if (url.charAt(4) == "." && url.charAt(-4) == ".") {
 //     let search = url.slice(4)
