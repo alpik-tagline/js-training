@@ -87,8 +87,6 @@ let abc = [
 
 // console.log(o3)
 
-
-
 // for (let i = 0; i < abc.length; i++) {
 //     let output = [abc[i].id, abc[i].gender === "female" && abc[i].name]
 //     console.log(output)
@@ -120,7 +118,6 @@ let abc = [
 //     console.log(`id ${id} name ${age}`)
 // ))
 
-
 // abc.map(({id,gender,name}) =>{
 //     if(gender==="male"){
 //         console.log(` name ${gender}`)
@@ -138,9 +135,7 @@ let abc = [
 
 // console.log(p2)
 
-
 // 1. print every latter in the interval of 1 second and stop after 'world' letter
-
 
 // let string = 'hello world';
 
@@ -150,9 +145,6 @@ let abc = [
 //     console.log(interval)
 // }
 
-
-
-
 // let string = "hello world"
 
 // for (let i = 0; i < string.length; i++) {
@@ -160,8 +152,6 @@ let abc = [
 //     let newot = setInterval(output, 1000)
 //     console.log(newot)
 // }
-
-
 
 // 1. get year based on given date 
 //    get month based on given date 
@@ -177,7 +167,6 @@ let abc = [
 // let currentDate = new Date('13:1');
 // let am_pm = currentDate.toLocaleTimeString();
 // console.log(am_pm); // 12:48:20 PM
-
 
 // var x = new Date('13:1')
 // var y = x.toLocaleString([],{
@@ -218,10 +207,8 @@ let abc = [
 //     let output = ""
 //     output += string[i]
 //     setInterval(output, 1000)
+//     console.log(output)
 // }
-
-
-
 // let string = 'Hello world bhavik'
 
 // let interval = function () {
@@ -234,9 +221,26 @@ let abc = [
 
 // interval()
 
-let text = 'xvvxvvvvvxxvvvvxvvvxvvvvvvv'
-let res = /xv/.exec(text)
-console.log(res)
+// let text1 = 'xvvxvvvvvxxvvvvxvvvxvvvvvvv'
+// let res = /xv/g.exec(text1)
+// console.log(res)
+
+
+// let str = 'Hello world'.split('')
+
+// let interval = setInterval(() => {
+//     for (let i = 0; i < str.length; i++) {
+//         console.log(str[i])
+//     }
+// })
+
+// let time = '13:1'
+
+// if (time > '12') {
+//     console.log(time, "pm")
+// } else {
+//     console.log(time, "am")
+// }
 
 // DONE PROGRAMS
 
@@ -259,32 +263,92 @@ console.log(res)
 // let md = `${date.getMonth() + 1}-${date.getDate()}`
 // console.log("DD/MM", md)
 
-// for (let i = 0; i < abc.length; i++) {
-//     let output = [abc[i].id, abc[i].name]
-//     console.log(output)
+// let string = 'xvvxvvvvvxxvvvvxvvvxvvvvvvv';
+// let positions = [];
+
+// for (let i = 0; i < string.length; i++) {
+//     if (string[i] === 'x' && string[i + 1] === 'v') {
+//         positions.push(i);
+//     }
 // }
 
+// console.log(positions);
+
+// let first = [];
 // for (let i = 0; i < abc.length; i++) {
-//     let output = [abc[i].id, abc[i].age]
-//     console.log(output)
+//     first.push({ id: abc[i].id, name: abc[i].name });
+// }
+// console.log(first);
+
+// let second = [];
+// for (let i = 0; i < abc.length; i++) {
+//     second.push({ id: abc[i].id, age: abc[i].age });
+// }
+// console.log(second);
+
+// let third = [];
+// for (let i = 0; i < abc.length; i++) {
+//   if (abc[i].gender === "male") {
+//     third.push({ id: abc[i].id, name: abc[i].name });
+//   }
 // }
 
+// console.log(third)
+
+// let fourth = [];
 // for (let i = 0; i < abc.length; i++) {
-//     let output = [abc[i].gender === "male" && abc[i].name,abc[i].id]
-//     console.log(output)
+//   if (abc[i].age > 30) {
+//     fourth.push({ id: abc[i].id, name: abc[i].name });
+//   }
+// }
+// console.log(fourth)
+
+// let fifth = [];
+// for (let i = 0; i < abc.length; i++) {
+//   if (abc[i].gender === "female" && abc[i].age > 30) {
+//     fifth.push({ id: abc[i].id, name: abc[i].name });
+//   }
+// }
+// console.log(fifth)
+
+// let sixth = [];
+// for (let i = 0; i < abc.length; i++) {
+//   if (abc[i].age < 30) {
+//     sixth.push({ name: abc[i].name, age: abc[i].age });
+//   }
 // }
 
-// for (let i = 0; i < abc.length; i++) {
-//     let output = [abc[i].age > 30 && abc[i].name,abc[i].id, ]
-//     console.log(output)
+// console.log(sixth)
+
+// let string = 'hello world Bhavik';
+// let interval
+
+// function print() {
+//     let index = 0;
+
+//     interval = setInterval(() => {
+
+//         console.log(string[index]);
+//         index++;
+
+//         if (string.slice(index) === 'Bhavik') {
+//             clearInterval(interval);
+//         }
+//     }, 1000);
 // }
 
-// for (let i = 0; i < abc.length; i++) {
-//     let output = [abc[i].gender === "female" ,abc[i].age > 30 && abc[i].name]
-//     console.log(output)
-// }
+// print();
 
-// for (let i = 0; i < abc.length; i++) {
-//     let output = [abc[i].id, abc[i].age < 30 && abc[i].name, abc[i].age]
-//     console.log(output)
-// }
+// setTimeout(() => {
+//     console.log(string);
+// }, 2000);
+
+function formatTime(timeString) {
+    const [hourString, minute] = timeString.split(":");
+    const hour = +hourString % 24;
+    return (hour % 12 || 12) + ":" + minute + (hour < 12 ? "AM" : "PM");
+}
+
+console.log(formatTime("9:02"));
+
+
