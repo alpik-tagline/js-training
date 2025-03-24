@@ -244,7 +244,8 @@ let abc = [
 
 // DONE PROGRAMS
 
-// const email = 'xyz@xyz-xc.co.in';
+// const email = 'tagline@1-2.com';
+// // 'asdadasd asdas dasd asdasdasd asd';
 // const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 // if (emailRegex.test(email)) {
@@ -303,6 +304,20 @@ let abc = [
 // }
 // console.log(fourth)
 
+
+// let a = abc.map((age) => {
+//     age > 30
+//     return age
+// })
+// console.log(a)
+
+// let filterFour = abc.filter((age)=>{
+//     age>30
+//     return age
+// })
+
+// console.log("filterFour",filterFour)
+
 // let fifth = [];
 // for (let i = 0; i < abc.length; i++) {
 //   if (abc[i].gender === "female" && abc[i].age > 30) {
@@ -310,6 +325,34 @@ let abc = [
 //   }
 // }
 // console.log(fifth)
+
+// let fifth = abc.map((person) => {
+//     return person.gender === "female" && person.age > 30;
+// });
+
+// console.log("fifth", fifth);
+
+
+
+//UPDATED
+
+// let first = abc.map(user => ({ id: user.id, name: user.name }));
+// console.log("first", first)
+
+// let second = abc.map(user => ({ id: user.id, age: user.age }));
+// console.log("second", second)
+
+// let third = abc.filter(user => user.gender === 'male').map(user => ({ id: user.id, name: user.name }));
+// console.log("third", third)
+
+// let forth = abc.filter(user => user.age > 30).map(user => ({ id: user.id, name: user.name }));
+// console.log("forth", forth)
+
+// let five = abc.filter(user => user.age > 30 && user.gender === 'female').map(user => ({ id: user.id, name: user.name }));
+// console.log("five", five)
+
+// let six = abc.filter(user => user.age < 30).map(user => ({ name: user.name, age: user.age }));
+// console.log("six", six)
 
 // let sixth = [];
 // for (let i = 0; i < abc.length; i++) {
@@ -339,16 +382,50 @@ let abc = [
 
 // print();
 
+// for (let i = 0; i < string.length; i++) {
+//     setTimeout(() => {
+//         console.log(string[i]);
+//     }, 2000);
+// }
+
+
 // setTimeout(() => {
 //     console.log(string);
 // }, 2000);
 
-function formatTime(timeString) {
-    const [hourString, minute] = timeString.split(":");
+// function formatTime(time) {
+//     let [hourString, minute] = time.split(":");
+//     const hour = +hourString % 24;
+//     return (hour % 12 || 12) + ":" + minute + (hour < 12 ? "AM" : "PM");
+// }
+
+// console.log(formatTime("9:2"));
+
+//UPDATED
+
+function formatTime(time) {
+    let [hourString, minutes] = time.split(':').map(num => num.padStart(2, '0'));
     const hour = +hourString % 24;
-    return (hour % 12 || 12) + ":" + minute + (hour < 12 ? "AM" : "PM");
+    return (hour % 12 || 12) + ":" + minutes + (hour < 12 ? "AM" : "PM");
 }
 
-console.log(formatTime("9:02"));
+console.log(formatTime('13:1'));
 
 
+let first = abc.map(user => ({ id: user.id, name: user.name }));
+console.log("first", first)
+
+let second = abc.map(user => ({ id: user.id, age: user.age }));
+console.log("second", second)
+
+let third = abc.filter(user => user.gender === 'male').map(user => ({ id: user.id, name: user.name }));
+console.log("third", third)
+
+let forth = abc.filter(user => user.age > 30).map(user => ({ id: user.id, name: user.name }));
+console.log("forth", forth)
+
+let five = abc.filter(user => user.age > 30 && user.gender === 'female').map(user => ({ id: user.id, name: user.name }));
+console.log("five", five)
+
+let six = abc.filter(user => user.age < 30).map(user => ({ name: user.name, age: user.age }));
+console.log("six", six)
